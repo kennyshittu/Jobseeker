@@ -1,37 +1,151 @@
 
 html , body{
 	width: 100%;
- 	height:160%;
+ 	height:130%;
  	margin: 0 0;
  	padding: 0 0;
+ 	background: red;
 }
 body > div {
 	width: 100%;
 	height:15%;
-	margin: 0 0;
+	margin: 0 auto;
 	padding: 0 0;
 }
+#first{
+	height: 30%;
+}
+#second{
+	height: 48%;
+	display: block;
+	margin-left: 17%;
+	padding: auto;
+}
+#second h1{
+	font-weight: 400;
+	padding-bottom: 2%;
+	font-size: 250%;
+}
+#seconf p{
+	font-size: 300%;
+}
+#second input{
+	color: white;
+	box-shadow: none;
+	border: none;
+	margin-top: 2%;
+	background: green;
+	height: 16%;
+	width: 12%;
+	font-size: 100%;
+}
+
+#third{
+	height: 22%;
+	background:-webkit-linear-gradient(to bottom,#404040,transparent);
+	background: linear-gradient(to bottom,#404040,transparent);
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+}
+#third h1{
+	font-weight: 100;
+	font-size: 220%;
+	padding-bottom: 1%;
+	text-align: center;
+}
 .first{
-	background: url('../img/7.jpg') repeat;
-	background-color: blue;
+	font-family: 'Arimo', sans-serif;
 	height:40%;	
+	background: url('../img/jobseeker_homepage.png') no-repeat left top,url('../img/7.jpg');
+}
+.first ul{
+	float: right;
+	margin-right: 7%;
+
+}
+.first h1{
+	clear:right;
+	text-align: left;
 }
 .second{
+	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	height:20%;
 }
+.second h1{
+	color: #808080;
+	font-weight: normal;
+	font-size: 250%;
+}
+.second ul{
+	text-align: center;
+	vertical-align: middle;
+}
 
 .third{
-	background-image: url('../img/fir.jpg') ;
-	background-repeat: no-repeat;
-	background-color: green;
-	background-size: 100% 100%;	
+	font-family: 'Arimo', sans-serif;
+	background:url('../img/blur.jpg') no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	vertical-align: middle;
+	height:20%;
+}
+.third h1{
+	font-weight: 100; 
+	padding: 1%;
+}
+.third p{
+	padding-top: 1%;
+}
+.third input{
+	color: white;
+	background: green;
+	box-shadow: none;
+	border: none;
+	margin-top: 2%;
+	height: 16%;
+	width: 12%;
+	font-size: 100%;
 }
 .fourth{
+	font-family: 'Roboto', sans-serif;
 	background-color: white;	
 }
 .fifth{
+	font-family: 'Arimo', sans-serif;
 	background-color: black;
 	height:5%;
+}
+.fifth a{
+	color: white;
+}
+ul{
+	list-style: none;
+	margin: 0 0;
+
+}
+li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+	margin: 0 0;
+}
+h1{
+	text-align: center;
+}
+h1, p, input, header{
+	margin: 0 0;
+}
+.process li{
+	text-align: center;
+	height:5%; 
+	width:10%;
+	color: #808080;
+	vertical-align:middle;
 }
 
