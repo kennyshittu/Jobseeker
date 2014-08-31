@@ -1,7 +1,7 @@
-
+/*Structure*/
 html , body{
 	width: 100%;
- 	height:130%;
+ 	height:140%;
  	margin: 0 0;
  	padding: 0 0;
  	background: red;
@@ -12,6 +12,41 @@ body > div {
 	margin: 0 auto;
 	padding: 0 0;
 }
+ul{
+	list-style: none;
+	margin: 0 0;
+}
+li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+	margin: 0 0;
+}
+h1{
+	text-align: center;
+}
+h1, p, input, header{
+	margin: 0 0;
+}
+/*First Division*/
+.first{
+	font-family: 'Arimo', sans-serif;
+	height:40%;	
+	background: url('../img/jobseeker_homepage.png') no-repeat left top,url('../img/7.jpg');
+}
+.first ul{
+	float: right;
+	margin-right: 7%;
+}
+.first h1{
+	clear:right;
+	text-align: left;
+}
+/*Id of sections under First Division*/
 #first{
 	height: 30%;
 }
@@ -39,7 +74,6 @@ body > div {
 	width: 12%;
 	font-size: 100%;
 }
-
 #third{
 	height: 22%;
 	background:-webkit-linear-gradient(to bottom,#404040,transparent);
@@ -54,20 +88,7 @@ body > div {
 	padding-bottom: 1%;
 	text-align: center;
 }
-.first{
-	font-family: 'Arimo', sans-serif;
-	height:40%;	
-	background: url('../img/jobseeker_homepage.png') no-repeat left top,url('../img/7.jpg');
-}
-.first ul{
-	float: right;
-	margin-right: 7%;
-
-}
-.first h1{
-	clear:right;
-	text-align: left;
-}
+/*Second Division*/
 .second{
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
@@ -82,7 +103,14 @@ body > div {
 	text-align: center;
 	vertical-align: middle;
 }
-
+.process li{
+	text-align: center;
+	height:5%; 
+	width:10%;
+	color: #808080;
+	vertical-align:middle;
+}
+/*Third Division*/
 .third{
 	font-family: 'Arimo', sans-serif;
 	background:url('../img/blur.jpg') no-repeat;
@@ -108,44 +136,41 @@ body > div {
 	width: 12%;
 	font-size: 100%;
 }
+/*Fourth Division*/
 .fourth{
 	font-family: 'Roboto', sans-serif;
 	background-color: white;	
 }
+.fourth h1{
+	font-weight: 100; 
+	padding: 0 0;
+	color: #808080;
+}
+.fourth ul{
+	text-align: center;
+	vertical-align: middle;
+}
+.fourth li{
+	padding-left: 7%;
+}
+.partners li{
+	text-align: center;
+	vertical-align:middle;
+	height:5%; 
+	width:10%;
+}
+/*Fifth Division*/
 .fifth{
 	font-family: 'Arimo', sans-serif;
 	background-color: black;
 	height:5%;
+	border-top: 4px solid green;
+	font-size: 70%;
+	vertical-align: bottom;
 }
 .fifth a{
 	color: white;
 }
-ul{
-	list-style: none;
-	margin: 0 0;
 
-}
-li {
-	display: inline-block;
-	padding: 10px;
-	margin: 0 0;
-}
-a {
-	text-decoration: none;
-	color: black;
-	margin: 0 0;
-}
-h1{
-	text-align: center;
-}
-h1, p, input, header{
-	margin: 0 0;
-}
-.process li{
-	text-align: center;
-	height:5%; 
-	width:10%;
-	color: #808080;
-	vertical-align:middle;
-}
+
 
