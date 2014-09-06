@@ -1,176 +1,218 @@
-/*Structure*/
-html , body{
-	width: 100%;
- 	height:140%;
- 	margin: 0 0;
- 	padding: 0 0;
- 	background: red;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-body > div {
-	width: 100%;
-	height:15%;
-	margin: 0 auto;
-	padding: 0 0;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-ul{
+body {
+	line-height: 1;
+}
+ol, ul {
 	list-style: none;
-	margin: 0 0;
 }
-li {
-	display: inline-block;
-	padding: 10px;
-	margin: 0 0;
+blockquote, q {
+	quotes: none;
 }
-a {
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+	text-align: center;
+}
+.first{
+	color: black;
+	background: url('../img/bg.jpg') no-repeat center/cover;
+	font-family: 'Roboto', sans-serif;
+}
+.first a{
 	text-decoration: none;
 	color: black;
-	margin: 0 0;
 }
-h1{
-	text-align: center;
-}
-h1, p, input, header{
-	margin: 0 0;
-}
-/*First Division*/
-.first{
-	font-family: 'Arimo', sans-serif;
-	height:40%;	
-	background: url('../img/jobseeker_homepage.png') no-repeat left top,url('../img/7.jpg');
+.first a:hover{
+	font-size: 1.2em;
+	background: white;
+	border-radius: 20% 20%;
 }
 .first ul{
-	float: right;
-	margin-right: 7%;
+	list-style: none;
+	padding-top: 1em;
 }
-.first h1{
-	clear:right;
-	text-align: left;
-}
-/*Id of sections under First Division*/
-#first{
-	height: 30%;
+.first li{
+	font-size: 1.1em;
 }
 #second{
-	height: 48%;
-	display: block;
-	margin-left: 17%;
-	padding: auto;
+	text-align: center;
+}
+#second {
+	padding-left: 3em;
 }
 #second h1{
-	font-weight: 400;
-	padding-bottom: 2%;
-	font-size: 250%;
+	font-size: 2.5em;
+	margin: 0.75em 0;
 }
-#seconf p{
-	font-size: 300%;
+#second p{
+	font-size: 1.3em;
+	margin: 0.5em;
 }
 #second input{
+	font-size: 1.2em;
+	padding: 0 0;
+	margin: 0 0;
+	background-color: green;
 	color: white;
-	box-shadow: none;
-	border: none;
-	margin-top: 2%;
-	background: green;
-	height: 16%;
-	width: 12%;
-	font-size: 100%;
+	border: 0px;
+	height: 3em;
+	width: 10em;
+	margin-bottom: 1em;
+}
+#second input:hover{
+	background-color: green;
+	color: white;
+	border: 4px solid white;
+	height: 3em;
+	width: 10em;
 }
 #third{
-	height: 22%;
-	background:-webkit-linear-gradient(to bottom,#404040,transparent);
-	background: linear-gradient(to bottom,#404040,transparent);
-	color: white;
-	vertical-align: middle;
 	text-align: center;
+	background: rgba(0,0,0,0.4);
+	color: white;
+	font-weight: 100;
 }
 #third h1{
 	font-weight: 100;
-	font-size: 220%;
-	padding-bottom: 1%;
-	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em;
 }
-/*Second Division*/
+#third p{
+	font-size: 1em;
+	padding-bottom: 0.8em;
+}
 .second{
+	color: grey;
 	font-family: 'Roboto', sans-serif;
-	background-color: white;
-	height:20%;
+	text-align: center;
 }
 .second h1{
-	color: #808080;
-	font-weight: normal;
-	font-size: 250%;
+	font-weight: 400;
+	font-size: 2.0em;
+	padding: 0.5em;
 }
-.second ul{
-	text-align: center;
-	vertical-align: middle;
+.second li{
+	list-style: none;
+	padding-bottom: 3em;
 }
-.process li{
-	text-align: center;
-	height:5%; 
-	width:10%;
-	color: #808080;
-	vertical-align:middle;
+.second img{
+	max-height: 5em;
 }
-/*Third Division*/
 .third{
-	font-family: 'Arimo', sans-serif;
-	background:url('../img/blur.jpg') no-repeat;
-	background-size: 100% 100%;
+	background:url('../img/blur.jpg') no-repeat center/cover; 
 	text-align: center;
-	vertical-align: middle;
-	height:20%;
 }
 .third h1{
-	font-weight: 100; 
-	padding: 1%;
+	font-weight: 400;
+	font-family: 'Roboto' sans-serif;
+	font-size: 2.0em;
+	padding: 0.5em;
 }
 .third p{
-	padding-top: 1%;
+	font-size: 1.3em;
+	font-family: 'Roboto' sans-serif;
+	margin:0 0;
 }
 .third input{
-	color: white;
-	background: green;
-	box-shadow: none;
-	border: none;
-	margin-top: 2%;
-	height: 16%;
-	width: 12%;
-	font-size: 100%;
-}
-/*Fourth Division*/
-.fourth{
-	font-family: 'Roboto', sans-serif;
-	background-color: white;	
-}
-.fourth h1{
-	font-weight: 100; 
+	font-size: 1.2em;
 	padding: 0 0;
-	color: #808080;
+	margin: 1em 0;
+	background-color: green;
+	color: white;
+	border: 0px;
+	height: 3em;
+	width: 10em;
 }
-.fourth ul{
+.third input:hover{
+	background-color: green;
+	color: white;
+	border: 4px solid white;
+	height: 3em;
+	width: 10em;
+}
+.fourth{
 	text-align: center;
-	vertical-align: middle;
+	color:grey;
+	font-family: 'Roboto', sans-serif;
 }
 .fourth li{
-	padding-left: 7%;
+	list-style: none;
+	padding: 1.5em;
 }
-.partners li{
-	text-align: center;
-	vertical-align:middle;
-	height:5%; 
-	width:10%;
+.fourth h1{
+	font-weight: 400;
+	font-size: 2.0em;
+	padding: 0.5em;
 }
-/*Fifth Division*/
 .fifth{
-	font-family: 'Arimo', sans-serif;
-	background-color: black;
-	height:5%;
-	border-top: 4px solid green;
-	font-size: 70%;
-	vertical-align: bottom;
+	color: white;
+	background: black;
+	border-top: 0.3em solid green;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	height: 3em;
+
+}
+.fifth li{
+	list-style: none;
+	display: inline-block;
+	font-size: 0.75em;
+	padding-left: 0.5em;
 }
 .fifth a{
+	text-decoration: none;
+	font-size: 1.1em;
 	color: white;
 }
-
-
-
+.fifth a:hover{
+	text-decoration: underline;
+	font-size: 1.3em;
+}
